@@ -37,13 +37,13 @@ generic (
 );
 port
 (
-	clk			  : in  std_logic;
-	rst			  : in  std_logic;
-	data		  : in  std_logic_vector(7 downto 0);
+	clk           : in  std_logic;
+	rst           : in  std_logic;
+	data	      : in  std_logic_vector(7 downto 0);
 	write_address : in  std_logic_vector(N - 1 downto 0);
 	read_address  : in  std_logic_vector(N - 1 downto 0);
-	we			  : in  std_logic;
-	q			  : out std_logic_vector(7 downto 0)
+	we	      : in  std_logic;
+	q             : out std_logic_vector(7 downto 0)
 );
 end component;
 
@@ -65,7 +65,7 @@ end component;
 
 signal write_address   : std_logic_vector(N - 1 downto 0);
 signal read_address    : std_logic_vector(N - 1 downto 0);
-signal data		       : std_logic_vector(7 downto 0);
+signal data            : std_logic_vector(7 downto 0);
 signal we              : std_logic := '0';
 signal q               : std_logic_vector(7 downto 0); -- 255 gray
 
